@@ -74,7 +74,7 @@ class Post extends Resource
                 ->sortable()
                 ->rules('max:255'),
 
-            Image::make('Image'),
+            Image::make('Image')->disk('public'),
 
             Textarea::make('Content'),
 
